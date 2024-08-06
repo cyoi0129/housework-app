@@ -30,7 +30,7 @@ const loginStatus = computed<boolean>(() => {
 });
 
 watch(userStore, () => {
-  if (loginStatus.value) router.push('/');
+  if (loginStatus.value) window.location.href = "/";
 });
 </script>
 <style lang="scss" scoped>
